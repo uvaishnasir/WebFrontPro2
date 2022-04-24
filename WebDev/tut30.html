@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            font-size: 60px;
+            display: none;
+        }
+
+        @media only screen and (max-width : 170px) {
+            #box1 {
+                display: block;
+                background-color: black;
+                color: wheat;
+            }
+        }
+
+        @media (min-width : 170px) and (max-width : 350px) {
+            #box2 {
+                display: block;
+                background-color: green;
+                color: white;
+            }
+        }
+
+        @media (min-width : 350px) and (max-width : 700px) {
+            #box3 {
+                display: block;
+                background-color: rgb(21, 122, 122);
+                color: rgb(73, 8, 8);
+            }
+        }
+
+        @media (min-width : 700px) {
+            #box4 {
+                display: block;
+                background-color: rgb(141, 136, 185);
+                color: rgb(150, 10, 10);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">I'm an iPhone</div>
+    <div class="box" id="box2">I'm a Tablet</div>
+    <div class="box" id="box3">I'm a Desktop Computer</div>
+    <div class="box" id="box4">I'm a WideScreen Computer</div>
+</body>
+
+</html>

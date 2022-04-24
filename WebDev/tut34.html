@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 20px 12px;
+            padding: 13px 12px;
+            /* border: 2px solid red; */
+            background-color: aqua;
+            /* box-shadow: offset-x, offset-y, blur radius, spread radius*/
+            /* box-shadow: 10px 13px green;
+            box-shadow: -10px -13px green;
+            box-shadow: 10px 13px 10px 5px green; */
+            /* box-shadow: inset 15px 13px green; */
+            box-shadow: 10px 13px green, 15px 18px red;
+        }
+
+        .card h2 {
+            text-shadow: 4px 5px 4px rgb(223, 205, 205);
+            text-shadow: 3px 4px rgb(158, 136, 136);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is the Web Dev. course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima illum rem dolorum amet quam
+                veniam quibusdam suscipit sequi impedit, quo quos eaque fugit accusantium neque consequuntur, voluptas
+                placeat asperiores!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is the CSS course.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima illum rem dolorum amet quam
+                veniam quibusdam suscipit sequi impedit, quo quos eaque fugit accusantium neque consequuntur, voluptas
+                placeat asperiores!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is the C++ course.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minima illum rem dolorum amet quam
+                veniam quibusdam suscipit sequi impedit, quo quos eaque fugit accusantium neque consequuntur, voluptas
+                placeat asperiores!</p>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
