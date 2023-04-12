@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+    <style>
+
+        .container{
+
+          background: #3b82dfbe;
+          width: 600px;
+          /* display: flex;
+          align-items: center;
+          flex-direction:column; */
+            
+        }
+        .btn{
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            border: 2px solid rgb(2, 36, 131);
+            background-color: aquamarine;
+        }
+        .container label , .container input{
+            
+            padding: 5px;
+            margin: 6px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="container">
+            <h1>Student Registration</h1>
+            <hr>
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required> <br>
+
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required> <br>
+            
+            <label for="phone"><b>Phone No.</b></label>
+            <input type="phone" placeholder="Enter phone number" name="phone" id="phone"> <br>
+            
+            <label for="Fname"><b>Father name</b></label>
+            <input type="text" name="Fname" id="Fname" placeholder="Enter Father Name" required> <br>
+
+            <label for="address"><b>Address</b></label>
+            <input type="text" placeholder="Enter Address" name="address" id="address"> <br>
+            
+            <label for="sex"> <b>Sex</b></label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="fmale">Female <br>
+
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" name="dob" id="dob"> <br>
+
+            <label for="city"><b>City</b></label>
+            <input type="text" placeholder="Enter city" name="city" id="city"> <br>
+
+            <label for="course"><b>Course</b></label>
+            <input type="text" placeholder="Enter Course" name="course" id="course"><br>
+
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+
+            <hr>
+            <button type="submit" class="btn"  onclick="myfunc()">Submit</button>
+            <button type="reset" class="btn">Reset</button>
+
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function myfunc()
+        {
+            alert("Registration Success");
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
