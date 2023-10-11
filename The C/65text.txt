@@ -1,0 +1,3 @@
+This is the new File.
+Now we're writing in this file char by char method by using the fputc function.
+Thanks!
